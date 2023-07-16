@@ -3,7 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title></title>
+    <style>
+      body{
+        font-size: 20px;
+        margin: 40px;
+      }
+      		ul	{
+				/*	alterar	para	circulo	antes	de	cada	<li>	da	lista	não-ordenada	*/
+				list-style-type:	circle;
+		}
+		ol	{
+				/*	alterar	para	uma	sequência	alfabética	antes	de	cada	<li>	da	lista	ordenada	*/
+				list-style-type:	upper-alpha;
+        
+		}
+    main{
+      background-color: transparent;
+      background-color: #c0c0c0;
+      border: #800000;
+      border: 3px solid;
+    }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>LISTAS HTML.</h1>
+    <main>
+    <ul>
+      <li>Primeiro item da lista</li>
+      <li>
+        Segundo item da lista:
+        <ul>
+          <li>Primeiro item da lista aninhada</li>
+          <li>Segundo item da lista aninhada</li>
+        </ul>
+      </li>
+      <li>Terceiro item da lista</li>
+    </ul>
+  </main>
+    <p>
+      Note que, para cada item da lista não-ordenada, utilizamos uma marcação de
+      item de lista
+      <li>
+        (list item). No exemplo acima, utilizamos uma estrutura composta na qual
+        o segundo item da lista contém uma nova lista. A mesma tag de item de
+        lista
+      </li>
+
+      <li>é utilizada quando demarcamos uma lista ordenada.</li>
+    </p>
+    <main>
+    <ol>
+      <li>Primeiro item da lista</li>
+      <li>Segundo item da lista</li>
+      <li>Terceiro item da lista</li>
+      <li>Quarto item da lista</li>
+      <li>Quinto item da lista</li>
+    </ol>
+    </main>
+    <p>As	listas	ordenadas	(	<ol>		-	ordered	list)	também	podem	ter	sua	estrutura	composta	por	outras	listas
+      ordenadas	 como	 no	 exemplo	 que	 temos	 para	 as	 listas	 não-ordenadas.	 Também	 é	 possível	 ter	 listas
+      ordenadas	aninhadas	em	um	item	de	uma	lista	não-ordenada	e	vice-versa.</p>
+      <h2>	LISTAS	DE	DEFINIÇÃO</h2>
+      <p>Existe	um	terceiro	tipo	de	lista	que	devemos	utilizar	para	demarcar	um	glossário,	quando	listamos
+        termos	e	seus	significados.	Essa	lista	é	a	lista	de	definição	(definition	list).</p>
+        <dl>
+          <dt>HTML</dt>
+          <dd>
+            HTML	é	a	linguagem	de	marcação	de	textos	utilizada
+            para	exibir	textos	como	páginas	na	Internet.
+          </dd>
+          <dt>Navegador</dt>
+          <dd>
+              Navegador	é	o	software	que	requisita	um	documento	HTML
+              através	do	protocolo	HTTP	e	exibe	seu	conteúdo	em	uma
+              janela.
+          </dd>
+      </dl>
+      Para	estilizar	o	formato	padrão	das	listas	ordenadas	e	não-ordenadas,	podemos	utilizar	a	propriedade
+	list-style-type		no	CSS:
+  </body>
 </html>
